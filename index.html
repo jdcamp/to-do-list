@@ -12,18 +12,27 @@
 
 <body>
   <div class="container">
-    <form class="task-list">
-      <div class="form-group row">
-        <label for="lgFormGroupInput" class="col-sm-2 col-form-label col-form-label-lg">Task</label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control" placeholder="please enter a task" id="task">
-        </div>
-        <button type="submit">Enter</button>
+    <div class="row">
+      <div class="col-sm-3">
+        <form class="task-list">
+          <div class="form-group row">
+            <label for="lgFormGroupInput"><h4>Tasks</h4></label>
+            <div>
+              <input type="text" class="form-control" placeholder="please enter a task" id="task">
+              <button type="submit">Enter</button>
+            </div>
+          </div>
+        </form>
+
       </div>
-    </form>
-    <div class="output-stream">
+      <div class="col-sm-9">
+        <div class="output-stream">
+          <h4>My To-do List</h4>
+        </div>
+        <button class="done">Done! clear from list</button>
+      </div>
     </div>
-    <button class="done">Done! clear from list</button>
+
   </div>
 </body>
 

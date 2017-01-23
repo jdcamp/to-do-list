@@ -1,7 +1,4 @@
 
-
-
-
 $(document).ready(function() {
     $("form.task-list").submit(function(event) {
       event.preventDefault();
@@ -15,7 +12,7 @@ $(document).ready(function() {
           });
      $(".done").click(function() {
        $("input:checkbox[name=tasks-given]:checked").each(function() {
-         $(this).parent().parent().remove();
+         $(this).closest(".form-check").remove();
        });
      });
 });
